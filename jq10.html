@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos de teclado con jQuery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+        }
+
+        input {
+            padding: 8px;
+            width: 300px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        .log {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #aaa;
+            background: #f9f9f9;
+            width: 320px;
+            min-height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejemplos de eventos de teclado con jQuery</h1>
+
+    <p>Escribe algo en el campo de texto:</p>
+    <input type="text" id="campo-texto" placeholder="Escribe aquí..." />
+
+    <div id="log" class="log">Eventos capturados aparecerán aquí...</div>
+    <!-- Conexión a jQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Conexión al archivo JS externo -->
+    <script src="app10.js"></script>
+</body>
+
+</html>

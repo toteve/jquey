@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll con animate()</title>
+  
+  <style>
+    body {
+      height: 2000px; /* para tener scroll vertical */
+      width: 3000px;  /* para tener scroll horizontal */
+    }
+    #destino {
+      margin-top: 1200px;
+      padding: 20px;
+      background: lightblue;
+      border: 2px solid #333;
+      width: 300px;
+    }
+    .btn {
+      margin: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      border: 1px solid #444;
+      border-radius: 5px;
+      background: #f5f5f5;
+    }
+    #panel-botones {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div id="panel-botones">
+    <button id="btn-destino" class="btn">Ir al destino</button>
+    <button id="btn-top" class="btn">Volver arriba</button>
+    <button id="btn-horizontal" class="btn">Scroll horizontal</button>
+    <button id="btn-horizontal-inicio" class="btn">Volver inicio horizontal</button>
+  </div>
+
+  <div id="destino">Aquí está el destino del scroll</div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app8.js"></script>
+</body>
+</html>

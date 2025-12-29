@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Evento change con jQuery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+        }
+
+        input,
+        select {
+            margin: 10px 0;
+            padding: 8px;
+            width: 250px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        .log {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #aaa;
+            background: #f9f9f9;
+            width: 280px;
+            min-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejemplo de evento change con jQuery</h1>
+
+    <div>
+        <label for="nombre">Escribe tu nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+    </div>
+
+
+    <div>
+        <label for="color">Selecciona un color:</label>
+        <select id="color">
+            <option value="">-- Selecciona --</option>
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            <option value="azul">Azul</option>
+        </select>
+    </div>
+
+    <div id="log" class="log">Aquí aparecerán los cambios...</div>
+
+    <!-- Conexión a jQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Conexión al archivo JS externo -->
+    <script src="app11.js"></script>
+</body>
+
+</html>

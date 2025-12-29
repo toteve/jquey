@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Eventos submit y load con jQuery</title>
+  <!-- Conexión a jQuery 3.7.1 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+
+    /* aplicamos flex y flex-direction:column en el formulario para que aparaezcan 
+       etiquetas de lineas como si fueran bloques */
+    form {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #333;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input {
+      padding: 6px;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+    button {
+      padding: 8px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .log {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #aaa;
+      background: #f9f9f9;
+      width: 320px;
+      min-height: 60px;
+    }
+    img {
+      margin-top: 20px;
+      border: 2px solid #333;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo de eventos submit y load</h1>
+
+  <!-- Formulario para probar submit -->
+  <form id="mi-formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" />
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Imagen para probar load -->
+  <figure>
+    <img id="mi-imagen" src="https://images.pexels.com/photos/35337346/pexels-photo-35337346.jpeg?_gl=1*1ibayg1*_ga*MTU2Nzk3MTkyOS4xNzY0NjkyNTgw*_ga_8JE65Q40S6*czE3NjY3NjMwMzkkbzIkZzAkdDE3NjY3NjMwMzkkajYwJGwwJGgw" alt="Imagen de prueba" />
+    <figcaption>Imagen de prueba cargada desde image.pexels.com</figcaption>
+  </figure>
+
+  <div id="log" class="log">Aquí aparecerán los mensajes...</div>
+
+  <!-- Conexión al archivo JS externo -->
+  <script src="app12.js"></script>
+</body>
+</html>

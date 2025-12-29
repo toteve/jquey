@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo jQuery: show, hide, fadeIn, fadeOut</title>
+
+    <!-- Estilos simples para visualizar los cambios -->
+    <style>
+        body {
+            font-family: system-ui, Arial, sans-serif;
+            margin: 2rem;
+        }
+
+        .panel-controles {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            padding: 0.5rem 0.9rem;
+            border: 1px solid #444;
+            border-radius: 6px;
+            background: #f5f5f5;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #eaeaea;
+        }
+
+        #caja {
+            display: block;
+            /* visible al cargar */
+            width: 100%;
+            max-width: 420px;
+            padding: 1rem;
+            border: 2px dashed #888;
+            border-radius: 8px;
+            background: #fff7cc;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Demostración de efectos jQuery</h1>
+
+    <div class="panel-controles">
+        <button id="btn-show" class="btn" type="button">show()</button>
+        <button id="btn-hide" class="btn" type="button">hide()</button>
+        <button id="btn-fadein" class="btn" type="button">fadeIn()</button>
+        <button id="btn-fadeout" class="btn" type="button">fadeOut()</button>
+    </div>
+
+    <div id="caja">
+        <strong>Contenido de la caja:</strong>
+        <p>Este bloque aparece y desaparece usando los efectos jQuery.</p>
+    </div>
+
+    <!-- jQuery 3.7.1 desde CDN oficial -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-1xQGDaYxZbKqK2fNkG6vEem0KcC8bWv/TpZfT2Qp3uY=" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Archivo JS externo con la lógica de eventos -->
+    <script src="app4_1.js"></script>
+</body>
+
+</html>
